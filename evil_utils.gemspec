@@ -54,9 +54,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
-      s.add_runtime_dependency(%q<rails>, [">= 4.0.0", "~> 4.0"])
-      s.add_runtime_dependency(%q<shoulda-matchers>, [">= 2.5.0", "~> 2.5"])
-      s.add_runtime_dependency(%q<responders>, [">= 1.0.0", "~> 1.0"])
+      s.add_runtime_dependency(%q<responders>, ["~> 1.0"])
     else
       s.add_dependency(%q<rails>, [">= 0"])
       s.add_dependency(%q<shoulda-matchers>, [">= 0"])
@@ -66,9 +64,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<bundler>, ["~> 1.0"])
       s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
       s.add_dependency(%q<simplecov>, [">= 0"])
-      s.add_dependency(%q<rails>, [">= 4.0.0", "~> 4.0"])
-      s.add_dependency(%q<shoulda-matchers>, [">= 2.5.0", "~> 2.5"])
-      s.add_dependency(%q<responders>, [">= 1.0.0", "~> 1.0"])
+      s.add_dependency(%q<responders>, ["~> 1.0"])
     end
   else
     s.add_dependency(%q<rails>, [">= 0"])
@@ -79,9 +75,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.0"])
     s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
     s.add_dependency(%q<simplecov>, [">= 0"])
-    s.add_dependency(%q<rails>, [">= 4.0.0", "~> 4.0"])
-    s.add_dependency(%q<shoulda-matchers>, [">= 2.5.0", "~> 2.5"])
-    s.add_dependency(%q<responders>, [">= 1.0.0", "~> 1.0"])
+    s.add_dependency(%q<responders>, ["~> 1.0"])
   end
 end
 
