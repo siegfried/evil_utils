@@ -21,6 +21,8 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Controller generators with responders and shoulda-matchers}
   gem.email = "zhiqiang.lei@gmail.com"
   gem.authors = ["Zhi-Qiang Lei"]
+  require './lib/evil_utils/version'
+  gem.version = EvilUtils::Version::STRING
   # dependencies defined in Gemfile
   gem.add_dependency 'rails', '>= 4.0.0'
   gem.add_dependency 'shoulda-matchers', '>= 2.5.0'
