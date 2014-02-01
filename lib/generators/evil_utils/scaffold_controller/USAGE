@@ -1,0 +1,8 @@
+Description:
+    Create a nicer controller enhanced by responders.
+
+Example:
+    `rails generate evil_utils:controller CreditCards open debit credit close`
+
+    CreditCards controller with URLs like /credit_cards/debit.
+        Controller: app/controllers/credit_cards_controller.rb

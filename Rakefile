@@ -17,11 +17,14 @@ Jeweler::Tasks.new do |gem|
   gem.name = "evil_utils"
   gem.homepage = "http://github.com/siegfried/evil_utils"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Evil utils for Rails}
+  gem.description = %Q{Controller generators with responders and shoulda-matchers}
   gem.email = "zhiqiang.lei@gmail.com"
   gem.authors = ["Zhi-Qiang Lei"]
   # dependencies defined in Gemfile
+  gem.add_dependency 'rails', '>= 4.0.0'
+  gem.add_dependency 'shoulda-matchers', '>= 2.5.0'
+  gem.add_dependency 'responders', '>= 1.0.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 

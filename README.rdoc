@@ -1,6 +1,6 @@
 = evil_utils
 
-Description goes here.
+Optimized scaffold controller generator and scaffold controller spec generator.
 
 == Contributing to evil_utils
  
