@@ -24,7 +24,6 @@ Jeweler::Tasks.new do |gem|
   require './lib/evil_utils/version'
   gem.version = EvilUtils::Version::STRING
   # dependencies defined in Gemfile
-  gem.add_dependency 'responders', '~> 1.0'
 end
 Jeweler::RubygemsDotOrgTasks.new
 

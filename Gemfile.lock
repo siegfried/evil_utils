@@ -96,6 +96,8 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    responders (1.0.0)
+      railties (>= 3.2, < 5)
     shoulda (3.5.0)
       shoulda-context (~> 1.0, >= 1.0.1)
       shoulda-matchers (>= 1.4.1, < 3.0)
@@ -132,9 +134,10 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0)
   jeweler (~> 2.0.1)
-  rails
+  rails (~> 4.0)
   rdoc (~> 3.12)
+  responders (~> 1)
   shoulda
-  shoulda-matchers
+  shoulda-matchers (~> 2.5)
   simplecov
   yard (~> 0.7)
