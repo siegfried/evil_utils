@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
+    "evil_utils.gemspec",
     "lib/evil_utils.rb",
     "lib/evil_utils/version.rb",
     "lib/generators/evil_utils/scaffold_controller/USAGE",

@@ -132,9 +132,9 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0)
   jeweler (~> 2.0.1)
-  rails (>= 4.0.0)
+  rails
   rdoc (~> 3.12)
   shoulda
-  shoulda-matchers (>= 2.5.0)
+  shoulda-matchers
   simplecov
   yard (~> 0.7)

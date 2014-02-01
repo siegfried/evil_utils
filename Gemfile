@@ -14,5 +14,5 @@ group :development do
   gem 'simplecov', '>= 0'
 end
 
-gem 'rails', '>= 4.0.0'
-gem 'shoulda-matchers', '>= 2.5.0'
+gem 'rails'
+gem 'shoulda-matchers'
