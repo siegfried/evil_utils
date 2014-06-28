@@ -4,10 +4,10 @@ require_dependency "<%= namespaced_file_path %>/application_controller"
 <% end -%>
 <% module_namespacing do -%>
 class <%= controller_class_name %>Controller < ApplicationController
-  before_action :set_<%= singular_table_name %>, only: %i{show edit update destroy}
+  before_action :set_<%= plural_table_name %>
+  before_action :set_<%= singular_table_name %>, only: [:show, :edit, :update, :destroy]
 
   def index
-    @<%= plural_table_name %> = <%= orm_class.all(class_name) %>
     respond_with @<%= plural_table_name %>
   end
 
@@ -16,7 +16,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   def new
-    @<%= singular_table_name %> = <%= orm_class.build(class_name) %>
+    @<%= singular_table_name %> = @<%= plural_table_name %>.build
     respond_with @<%= singular_table_name %>
   end
 
@@ -25,7 +25,7 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   def create
-    @<%= singular_table_name %> = <%= orm_class.build(class_name, "#{singular_table_name}_params") %>
+    @<%= singular_table_name %> = @<%= plural_table_name %>.build <%= "#{singular_table_name}_params" %>
     @<%= orm_instance.save %>
     respond_with @<%= singular_table_name %>
   end
@@ -41,6 +41,10 @@ class <%= controller_class_name %>Controller < ApplicationController
   end
 
   private
+
+  def set_<%= plural_table_name %>
+    @<%= plural_table_name %> = <%= orm_class.all(class_name) %>
+  end
 
   def set_<%= singular_table_name %>
     @<%= singular_table_name %> = <%= orm_class.find(class_name, "params[:id]") %>

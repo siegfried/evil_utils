@@ -1,7 +1,7 @@
-require 'spec_helper'
+require 'rails_helper'
 
 <% module_namespacing do -%>
-describe <%= controller_class_name %>Controller do
+RSpec.describe <%= controller_class_name %>Controller, :type => :controller do
 
   let!(:<%= file_name %>) { <%= class_name %>.create! valid_attributes }
   let(:<%= table_name_params %>) { {} }
