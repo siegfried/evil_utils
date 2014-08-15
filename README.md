@@ -3,6 +3,18 @@
 Optimized scaffold controller generator and scaffold controller spec
 generator.
 
+## Installation
+
+```bash
+gem install evil_utils
+```
+
+or add to your Gemfile:
+
+```ruby
+gem 'evil_utils', group: :development
+```
+
 ## Contributing to evil_utils
 
 *   Check out the latest master to make sure the feature hasn't been
