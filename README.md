@@ -6,7 +6,7 @@ generator.
 ## Installation
 
 ```bash
-gem install evil_utils
+$ gem install evil_utils
 ```
 
 or add to your Gemfile:
